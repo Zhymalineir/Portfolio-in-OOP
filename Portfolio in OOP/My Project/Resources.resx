@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnMIDTERMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\btnMIDTERMS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="m1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\m1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="coin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\coin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bundle5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\bundle5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wk5c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\wk5c.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="c9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\c9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="num4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\num4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\backbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="c3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\c3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="one-dim array" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\one-dim array.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wk5a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\wk5a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="opbtnred" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\opbtnred.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="c7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\c7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="num6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\num6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enterbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\enterbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wk11bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\wk11bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="midterm_grade_banner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\midterm_grade_banner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="title" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\title.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wk11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\wk11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="c5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\c5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="openingbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\openingbg.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\b11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="creatingclassesbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\creatingclassesbtn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\b24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wk10bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\wk10bg.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\b13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="item_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\item_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\weapon4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\b26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="checckbalancebtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\checckbalancebtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dotbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\dotbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="c2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\c2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bulletin_board" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\bulletin_board.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wk5h" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\wk5h.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\bg4.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\button1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\b22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\bg2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="d1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\d1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="d2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\d2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="num1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\num1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\newbg.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="array title" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\array title.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\select.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plusbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\plusbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="watermark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\watermark.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="classandobjectbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\classandobjectbtn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sidebar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\sidebar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wk5g" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\wk5g.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inventory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\inventory.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="item_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\item_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\btn3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wk5b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\wk5b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="c4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\c4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\b20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="item_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\item_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\b16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="d3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\d3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="borderstill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\borderstill.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="errorhandlingbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\errorhandlingbtn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="num9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\num9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\btn7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="timesbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\timesbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\b25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\b8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\b12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\button2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Heaven Ashley" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\Heaven Ashley.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\b2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\b21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FINALS_BANNEr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\FINALS_BANNEr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\weapon5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrowflip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\arrowflip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wk5d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\wk5d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chestclosed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\chestclosed.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menubtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\menubtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wk8a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\wk8a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="me2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\me2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\btn2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\b23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wk5i" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\wk5i.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="me4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\me4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="c6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\c6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="d6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\d6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\b17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exitbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\exitbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="0btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\0btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="debuggingbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\debuggingbtn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\menu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stardew_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\stardew_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="title1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\title.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bundle6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\bundle6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\weapon3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\b10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="equalsbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\equalsbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wk5e" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\wk5e.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bundle2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\bundle2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="num2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\num2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="a69dc0b76a8078d1f68a887d77b1f846" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\a69dc0b76a8078d1f68a887d77b1f846.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="num8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\num8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wk10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\wk10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minusbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\minusbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wk5f" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\wk5f.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\b9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Landscape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\Landscape.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnFINALS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\btnFINALS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Depositbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\Depositbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\b3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chestopen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\chestopen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menubar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menubar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\weapon6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bundle10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\bundle10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="erroranddebuggingbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\erroranddebuggingbtn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bundle4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\bundle4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\weapon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\b7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weapon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\weapon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dividebtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\dividebtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\b1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="containerrec" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\containerrec.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\b19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bundle1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\bundle1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="num3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\num3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unselect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\unselect.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\btn4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wk2bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\wk2bg.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="m6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\m6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bundle7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\bundle7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wk8b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\wk8b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="me1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\me1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnPLAYER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\btnPLAYER.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="0btnhover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\0btnhover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="m2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\m2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bundle3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\bundle3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wk11 animation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\wk11 animation.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="select1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\select.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="m4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\m4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="me3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\me3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bundle9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\bundle9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\btn1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\b6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="item_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\item_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Clock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\Clock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="item_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\item_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pierreframe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\pierreframe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="withdrawbtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\withdrawbtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BANNER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\BANNER.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="num5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\num5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="item_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\item_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calcbase" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\calcbase.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="week3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\week3.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="uibar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\uibar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\btn5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="num0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\num0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\b5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bundletree1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\bundletree.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\b4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\b14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\b18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="d4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\d4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wk11bg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\wk11bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="truthtable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\truthtable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="c8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\c8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="num7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\num7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="midterm_grade_banner1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\midterm_grade_banner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bundle8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\bundle8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sidebar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\sidebar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blckscreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\blckscreen.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="b15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\b15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bulletin_board1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\bulletin_board.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="d5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\d5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="m41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\m4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wk11con" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\wk11con.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="borderbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\borderbg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="m5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\m5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lvlname" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\lvlname.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="c10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\c10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="m3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\m3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trashcan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\trashcan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Elements\btn6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
