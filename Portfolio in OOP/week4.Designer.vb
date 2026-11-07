@@ -33,9 +33,6 @@ Partial Class week4
         Label1 = New Label()
         PictureBox8 = New PictureBox()
         exitbtn = New PictureBox()
-        backbtn = New PictureBox()
-        RTB3 = New RichTextBox()
-        RTB2 = New RichTextBox()
         Label3 = New Label()
         Label2 = New Label()
         Label4 = New Label()
@@ -43,9 +40,12 @@ Partial Class week4
         Label6 = New Label()
         Label7 = New Label()
         borderstill = New PictureBox()
+        backbtn = New PictureBox()
         PictureBox9 = New PictureBox()
-        PictureBox10 = New PictureBox()
         PictureBox11 = New PictureBox()
+        RTB3 = New RichTextBox()
+        PictureBox10 = New PictureBox()
+        RTB2 = New RichTextBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
@@ -55,11 +55,11 @@ Partial Class week4
         CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
         CType(exitbtn, ComponentModel.ISupportInitialize).BeginInit()
-        CType(backbtn, ComponentModel.ISupportInitialize).BeginInit()
         CType(borderstill, ComponentModel.ISupportInitialize).BeginInit()
+        CType(backbtn, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox9, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox10, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox11, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox10, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' PictureBox1
@@ -190,48 +190,6 @@ Partial Class week4
         exitbtn.TabIndex = 31
         exitbtn.TabStop = False
         ' 
-        ' backbtn
-        ' 
-        backbtn.BackColor = Color.Transparent
-        backbtn.BackgroundImage = My.Resources.Resources.backbtn
-        backbtn.BackgroundImageLayout = ImageLayout.Zoom
-        backbtn.Cursor = Cursors.Hand
-        backbtn.Image = My.Resources.Resources.exitbtn
-        backbtn.Location = New Point(1111, 29)
-        backbtn.Margin = New Padding(3, 2, 3, 2)
-        backbtn.Name = "backbtn"
-        backbtn.Size = New Size(50, 50)
-        backbtn.SizeMode = PictureBoxSizeMode.StretchImage
-        backbtn.TabIndex = 30
-        backbtn.TabStop = False
-        ' 
-        ' RTB3
-        ' 
-        RTB3.BorderStyle = BorderStyle.None
-        RTB3.Font = New Font("rainyhearts", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        RTB3.ForeColor = Color.FromArgb(CByte(64), CByte(0), CByte(0))
-        RTB3.Location = New Point(135, 156)
-        RTB3.Margin = New Padding(3, 2, 3, 2)
-        RTB3.Name = "RTB3"
-        RTB3.ReadOnly = True
-        RTB3.Size = New Size(908, 317)
-        RTB3.TabIndex = 29
-        RTB3.Text = ""
-        ' 
-        ' RTB2
-        ' 
-        RTB2.BorderStyle = BorderStyle.None
-        RTB2.Font = New Font("rainyhearts", 36F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        RTB2.ForeColor = Color.FromArgb(CByte(64), CByte(0), CByte(0))
-        RTB2.Location = New Point(236, 51)
-        RTB2.Margin = New Padding(3, 2, 3, 2)
-        RTB2.Name = "RTB2"
-        RTB2.ReadOnly = True
-        RTB2.ScrollBars = RichTextBoxScrollBars.None
-        RTB2.Size = New Size(726, 51)
-        RTB2.TabIndex = 28
-        RTB2.Text = ""
-        ' 
         ' Label3
         ' 
         Label3.AutoSize = True
@@ -316,6 +274,21 @@ Partial Class week4
         borderstill.TabIndex = 25
         borderstill.TabStop = False
         ' 
+        ' backbtn
+        ' 
+        backbtn.BackColor = Color.Transparent
+        backbtn.BackgroundImage = My.Resources.Resources.backbtn
+        backbtn.BackgroundImageLayout = ImageLayout.Zoom
+        backbtn.Cursor = Cursors.Hand
+        backbtn.Image = My.Resources.Resources.exitbtn
+        backbtn.Location = New Point(1111, 29)
+        backbtn.Margin = New Padding(3, 2, 3, 2)
+        backbtn.Name = "backbtn"
+        backbtn.Size = New Size(50, 50)
+        backbtn.SizeMode = PictureBoxSizeMode.StretchImage
+        backbtn.TabIndex = 30
+        backbtn.TabStop = False
+        ' 
         ' PictureBox9
         ' 
         PictureBox9.BackColor = Color.Transparent
@@ -328,6 +301,29 @@ Partial Class week4
         PictureBox9.TabIndex = 39
         PictureBox9.TabStop = False
         ' 
+        ' PictureBox11
+        ' 
+        PictureBox11.Image = My.Resources.Resources.menu
+        PictureBox11.Location = New Point(99, 120)
+        PictureBox11.Name = "PictureBox11"
+        PictureBox11.Size = New Size(989, 387)
+        PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox11.TabIndex = 41
+        PictureBox11.TabStop = False
+        ' 
+        ' RTB3
+        ' 
+        RTB3.BorderStyle = BorderStyle.None
+        RTB3.Font = New Font("rainyhearts", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        RTB3.ForeColor = Color.FromArgb(CByte(64), CByte(0), CByte(0))
+        RTB3.Location = New Point(135, 156)
+        RTB3.Margin = New Padding(3, 2, 3, 2)
+        RTB3.Name = "RTB3"
+        RTB3.ReadOnly = True
+        RTB3.Size = New Size(908, 317)
+        RTB3.TabIndex = 29
+        RTB3.Text = ""
+        ' 
         ' PictureBox10
         ' 
         PictureBox10.Image = My.Resources.Resources.menu
@@ -338,15 +334,19 @@ Partial Class week4
         PictureBox10.TabIndex = 40
         PictureBox10.TabStop = False
         ' 
-        ' PictureBox11
+        ' RTB2
         ' 
-        PictureBox11.Image = My.Resources.Resources.menu
-        PictureBox11.Location = New Point(99, 120)
-        PictureBox11.Name = "PictureBox11"
-        PictureBox11.Size = New Size(989, 387)
-        PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox11.TabIndex = 41
-        PictureBox11.TabStop = False
+        RTB2.BorderStyle = BorderStyle.None
+        RTB2.Font = New Font("rainyhearts", 36F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        RTB2.ForeColor = Color.FromArgb(CByte(64), CByte(0), CByte(0))
+        RTB2.Location = New Point(236, 51)
+        RTB2.Margin = New Padding(3, 2, 3, 2)
+        RTB2.Name = "RTB2"
+        RTB2.ReadOnly = True
+        RTB2.ScrollBars = RichTextBoxScrollBars.None
+        RTB2.Size = New Size(726, 51)
+        RTB2.TabIndex = 28
+        RTB2.Text = ""
         ' 
         ' week4
         ' 
@@ -394,11 +394,11 @@ Partial Class week4
         CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox8, ComponentModel.ISupportInitialize).EndInit()
         CType(exitbtn, ComponentModel.ISupportInitialize).EndInit()
-        CType(backbtn, ComponentModel.ISupportInitialize).EndInit()
         CType(borderstill, ComponentModel.ISupportInitialize).EndInit()
+        CType(backbtn, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox9, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox10, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox11, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox10, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -413,9 +413,6 @@ Partial Class week4
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents exitbtn As PictureBox
-    Friend WithEvents backbtn As PictureBox
-    Friend WithEvents RTB3 As RichTextBox
-    Friend WithEvents RTB2 As RichTextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label4 As Label
@@ -423,7 +420,10 @@ Partial Class week4
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents borderstill As PictureBox
+    Friend WithEvents backbtn As PictureBox
     Friend WithEvents PictureBox9 As PictureBox
-    Friend WithEvents PictureBox10 As PictureBox
     Friend WithEvents PictureBox11 As PictureBox
+    Friend WithEvents RTB3 As RichTextBox
+    Friend WithEvents PictureBox10 As PictureBox
+    Friend WithEvents RTB2 As RichTextBox
 End Class

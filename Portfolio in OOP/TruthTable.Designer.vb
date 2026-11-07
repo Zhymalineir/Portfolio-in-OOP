@@ -218,6 +218,7 @@ Partial Class TruthTable
         Button1.BackColor = Color.Transparent
         Button1.BackgroundImage = My.Resources.Resources._0btnhover
         Button1.BackgroundImageLayout = ImageLayout.Stretch
+        Button1.Cursor = Cursors.Hand
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatStyle = FlatStyle.Flat
         Button1.Font = New Font("Pixellari", 21.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
@@ -234,6 +235,7 @@ Partial Class TruthTable
         Button2.BackColor = Color.Transparent
         Button2.BackgroundImage = My.Resources.Resources._0btnhover
         Button2.BackgroundImageLayout = ImageLayout.Stretch
+        Button2.Cursor = Cursors.Hand
         Button2.FlatAppearance.BorderSize = 0
         Button2.FlatStyle = FlatStyle.Flat
         Button2.Font = New Font("Pixellari", 21.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
@@ -250,6 +252,7 @@ Partial Class TruthTable
         Button3.BackColor = Color.Transparent
         Button3.BackgroundImage = My.Resources.Resources._0btnhover
         Button3.BackgroundImageLayout = ImageLayout.Stretch
+        Button3.Cursor = Cursors.Hand
         Button3.FlatAppearance.BorderSize = 0
         Button3.FlatStyle = FlatStyle.Flat
         Button3.Font = New Font("Pixellari", 21.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
@@ -266,6 +269,7 @@ Partial Class TruthTable
         Button4.BackColor = Color.Transparent
         Button4.BackgroundImage = My.Resources.Resources._0btnhover
         Button4.BackgroundImageLayout = ImageLayout.Stretch
+        Button4.Cursor = Cursors.Hand
         Button4.FlatAppearance.BorderSize = 0
         Button4.FlatStyle = FlatStyle.Flat
         Button4.Font = New Font("Pixellari", 21.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
@@ -282,6 +286,7 @@ Partial Class TruthTable
         backbtn.BackColor = Color.Transparent
         backbtn.BackgroundImage = My.Resources.Resources.backbtn
         backbtn.BackgroundImageLayout = ImageLayout.Zoom
+        backbtn.Cursor = Cursors.Hand
         backbtn.Location = New Point(51, 83)
         backbtn.Margin = New Padding(3, 2, 3, 2)
         backbtn.Name = "backbtn"

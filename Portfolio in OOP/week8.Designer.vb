@@ -98,6 +98,7 @@ Partial Class week8
         ' dialog_print
         ' 
         dialog_print.BackColor = Color.Transparent
+        dialog_print.Cursor = Cursors.Hand
         dialog_print.Image = My.Resources.Resources.item_5
         dialog_print.Location = New Point(18, 302)
         dialog_print.Name = "dialog_print"
@@ -109,6 +110,7 @@ Partial Class week8
         ' dialog_savefile
         ' 
         dialog_savefile.BackColor = Color.Transparent
+        dialog_savefile.Cursor = Cursors.Hand
         dialog_savefile.Image = My.Resources.Resources.item_4
         dialog_savefile.Location = New Point(316, 160)
         dialog_savefile.Name = "dialog_savefile"
@@ -120,6 +122,7 @@ Partial Class week8
         ' dialog_font
         ' 
         dialog_font.BackColor = Color.Transparent
+        dialog_font.Cursor = Cursors.Hand
         dialog_font.Image = My.Resources.Resources.item_3
         dialog_font.Location = New Point(18, 160)
         dialog_font.Name = "dialog_font"
@@ -131,6 +134,7 @@ Partial Class week8
         ' dialog_openfile
         ' 
         dialog_openfile.BackColor = Color.Transparent
+        dialog_openfile.Cursor = Cursors.Hand
         dialog_openfile.Image = My.Resources.Resources.item_2
         dialog_openfile.Location = New Point(316, 19)
         dialog_openfile.Name = "dialog_openfile"
@@ -143,6 +147,7 @@ Partial Class week8
         ' 
         dialog_color.BackColor = Color.Transparent
         dialog_color.BackgroundImageLayout = ImageLayout.Stretch
+        dialog_color.Cursor = Cursors.Hand
         dialog_color.Image = My.Resources.Resources.item_11
         dialog_color.Location = New Point(18, 19)
         dialog_color.Name = "dialog_color"
@@ -177,6 +182,7 @@ Partial Class week8
         ' 
         pb1.BackColor = Color.Transparent
         pb1.BackgroundImage = My.Resources.Resources.transparent
+        pb1.Cursor = Cursors.Hand
         pb1.Location = New Point(523, 127)
         pb1.Name = "pb1"
         pb1.Size = New Size(89, 50)
@@ -188,6 +194,7 @@ Partial Class week8
         backbtn.BackColor = Color.Transparent
         backbtn.BackgroundImage = My.Resources.Resources.backbtn
         backbtn.BackgroundImageLayout = ImageLayout.Zoom
+        backbtn.Cursor = Cursors.Hand
         backbtn.Location = New Point(12, 37)
         backbtn.Margin = New Padding(3, 2, 3, 2)
         backbtn.Name = "backbtn"
@@ -199,6 +206,7 @@ Partial Class week8
         ' 
         picAvatar.BackColor = Color.Transparent
         picAvatar.BackgroundImageLayout = ImageLayout.Zoom
+        picAvatar.Cursor = Cursors.SizeWE
         picAvatar.Location = New Point(143, 148)
         picAvatar.Margin = New Padding(3, 2, 3, 2)
         picAvatar.Name = "picAvatar"
@@ -312,6 +320,7 @@ Partial Class week8
         ' 
         pb2.BackColor = Color.Transparent
         pb2.BackgroundImage = My.Resources.Resources.transparent
+        pb2.Cursor = Cursors.Hand
         pb2.Location = New Point(627, 127)
         pb2.Name = "pb2"
         pb2.Size = New Size(89, 50)

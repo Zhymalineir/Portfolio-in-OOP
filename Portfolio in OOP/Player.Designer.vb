@@ -58,6 +58,7 @@ Partial Class Player
         backbtn.BackColor = Color.Transparent
         backbtn.BackgroundImage = My.Resources.Resources.backbtn
         backbtn.BackgroundImageLayout = ImageLayout.Zoom
+        backbtn.Cursor = Cursors.Hand
         backbtn.Location = New Point(30, 30)
         backbtn.Name = "backbtn"
         backbtn.Size = New Size(68, 74)

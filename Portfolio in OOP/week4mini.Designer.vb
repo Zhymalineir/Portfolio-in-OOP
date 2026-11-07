@@ -406,7 +406,9 @@ Partial Class week4mini
         ' 
         ' PictureBox2
         ' 
+        PictureBox2.BackgroundImageLayout = ImageLayout.None
         PictureBox2.Dock = DockStyle.Fill
+        PictureBox2.Image = My.Resources.Resources.wk2bg
         PictureBox2.Location = New Point(0, 0)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(861, 661)
@@ -420,6 +422,7 @@ Partial Class week4mini
         Button1.BackColor = Color.Transparent
         Button1.BackgroundImage = My.Resources.Resources._0btnhover
         Button1.BackgroundImageLayout = ImageLayout.Stretch
+        Button1.Cursor = Cursors.Hand
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatStyle = FlatStyle.Flat
         Button1.ForeColor = Color.Goldenrod
@@ -435,6 +438,7 @@ Partial Class week4mini
         Button2.BackColor = Color.Transparent
         Button2.BackgroundImage = My.Resources.Resources.borderstill
         Button2.BackgroundImageLayout = ImageLayout.Stretch
+        Button2.Cursor = Cursors.Hand
         Button2.Dock = DockStyle.Bottom
         Button2.FlatAppearance.BorderSize = 0
         Button2.FlatStyle = FlatStyle.Flat
@@ -451,6 +455,7 @@ Partial Class week4mini
         backbtn.BackColor = Color.Transparent
         backbtn.BackgroundImage = My.Resources.Resources.backbtn
         backbtn.BackgroundImageLayout = ImageLayout.Zoom
+        backbtn.Cursor = Cursors.Hand
         backbtn.Location = New Point(30, 21)
         backbtn.Margin = New Padding(3, 2, 3, 2)
         backbtn.Name = "backbtn"

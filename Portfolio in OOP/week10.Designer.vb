@@ -52,6 +52,7 @@ Partial Class week10
         ' 
         ' debuggingmode
         ' 
+        debuggingmode.Cursor = Cursors.Hand
         debuggingmode.Image = My.Resources.Resources.debuggingbtn
         debuggingmode.Location = New Point(4, 227)
         debuggingmode.Name = "debuggingmode"
@@ -62,6 +63,7 @@ Partial Class week10
         ' 
         ' errorhandling
         ' 
+        errorhandling.Cursor = Cursors.Hand
         errorhandling.Image = My.Resources.Resources.errorhandlingbtn
         errorhandling.Location = New Point(4, 171)
         errorhandling.Name = "errorhandling"
@@ -72,6 +74,7 @@ Partial Class week10
         ' 
         ' erroranddebugging
         ' 
+        erroranddebugging.Cursor = Cursors.Hand
         erroranddebugging.Image = My.Resources.Resources.erroranddebuggingbtn
         erroranddebugging.Location = New Point(4, 115)
         erroranddebugging.Name = "erroranddebugging"
@@ -82,6 +85,7 @@ Partial Class week10
         ' 
         ' creatingclasses
         ' 
+        creatingclasses.Cursor = Cursors.Hand
         creatingclasses.Image = My.Resources.Resources.creatingclassesbtn
         creatingclasses.Location = New Point(4, 59)
         creatingclasses.Name = "creatingclasses"
@@ -92,6 +96,7 @@ Partial Class week10
         ' 
         ' classesandobjects
         ' 
+        classesandobjects.Cursor = Cursors.Hand
         classesandobjects.Image = My.Resources.Resources.classandobjectbtn
         classesandobjects.Location = New Point(4, 3)
         classesandobjects.Name = "classesandobjects"
@@ -140,6 +145,7 @@ Partial Class week10
         backbtn.BackColor = Color.Transparent
         backbtn.BackgroundImage = My.Resources.Resources.backbtn
         backbtn.BackgroundImageLayout = ImageLayout.Zoom
+        backbtn.Cursor = Cursors.Hand
         backbtn.Location = New Point(12, 31)
         backbtn.Margin = New Padding(3, 2, 3, 2)
         backbtn.Name = "backbtn"

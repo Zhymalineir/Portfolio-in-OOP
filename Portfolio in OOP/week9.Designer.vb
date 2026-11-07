@@ -97,6 +97,7 @@ Partial Class Week_9
         backbtn.BackColor = Color.Transparent
         backbtn.BackgroundImage = My.Resources.Resources.backbtn
         backbtn.BackgroundImageLayout = ImageLayout.Zoom
+        backbtn.Cursor = Cursors.Hand
         backbtn.Location = New Point(29, 24)
         backbtn.Margin = New Padding(3, 2, 3, 2)
         backbtn.Name = "backbtn"

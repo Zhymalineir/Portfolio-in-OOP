@@ -70,6 +70,7 @@ Partial Class finals
         backbtn.BackColor = Color.Transparent
         backbtn.BackgroundImage = My.Resources.Resources.backbtn
         backbtn.BackgroundImageLayout = ImageLayout.Zoom
+        backbtn.Cursor = Cursors.Hand
         backbtn.Location = New Point(27, 38)
         backbtn.Margin = New Padding(3, 2, 3, 2)
         backbtn.Name = "backbtn"
@@ -80,6 +81,7 @@ Partial Class finals
         ' wk10
         ' 
         wk10.BackColor = Color.Transparent
+        wk10.Cursor = Cursors.Hand
         wk10.Image = My.Resources.Resources.wk10
         wk10.Location = New Point(422, 140)
         wk10.Name = "wk10"
@@ -91,6 +93,7 @@ Partial Class finals
         ' wk11
         ' 
         wk11.BackColor = Color.Transparent
+        wk11.Cursor = Cursors.Hand
         wk11.Image = My.Resources.Resources.wk11
         wk11.Location = New Point(768, 140)
         wk11.Name = "wk11"
@@ -113,6 +116,7 @@ Partial Class finals
         ' arrow1
         ' 
         arrow1.BackColor = Color.Transparent
+        arrow1.Cursor = Cursors.Hand
         arrow1.Image = My.Resources.Resources.arrow
         arrow1.Location = New Point(1006, 473)
         arrow1.Name = "arrow1"
@@ -124,6 +128,7 @@ Partial Class finals
         ' arrow2
         ' 
         arrow2.BackColor = Color.Transparent
+        arrow2.Cursor = Cursors.Hand
         arrow2.Image = My.Resources.Resources.arrowflip
         arrow2.Location = New Point(402, 473)
         arrow2.Name = "arrow2"
@@ -135,12 +140,13 @@ Partial Class finals
         ' arrow3
         ' 
         arrow3.BackColor = Color.Transparent
+        arrow3.Cursor = Cursors.Hand
         arrow3.Image = My.Resources.Resources.arrow
         arrow3.Location = New Point(1006, 473)
         arrow3.Name = "arrow3"
         arrow3.Size = New Size(98, 46)
         arrow3.SizeMode = PictureBoxSizeMode.StretchImage
-        arrow3.TabIndex = 22
+        arrow3.TabIndex = 24
         arrow3.TabStop = False
         ' 
         ' finals

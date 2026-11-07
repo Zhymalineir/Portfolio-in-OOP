@@ -97,6 +97,7 @@ Partial Class week7
         backbtn.BackColor = Color.Transparent
         backbtn.BackgroundImage = My.Resources.Resources.backbtn
         backbtn.BackgroundImageLayout = ImageLayout.Zoom
+        backbtn.Cursor = Cursors.Hand
         backbtn.Location = New Point(12, 535)
         backbtn.Margin = New Padding(3, 2, 3, 2)
         backbtn.Name = "backbtn"
@@ -152,6 +153,7 @@ Partial Class week7
         ' arrnfunc
         ' 
         arrnfunc.BackColor = Color.Transparent
+        arrnfunc.Cursor = Cursors.Hand
         arrnfunc.Image = My.Resources.Resources.opbtnred
         arrnfunc.Location = New Point(490, 65)
         arrnfunc.Name = "arrnfunc"
@@ -163,6 +165,7 @@ Partial Class week7
         ' func
         ' 
         func.BackColor = Color.Transparent
+        func.Cursor = Cursors.Hand
         func.Image = My.Resources.Resources.opbtnred
         func.Location = New Point(459, 66)
         func.Name = "func"
@@ -174,6 +177,7 @@ Partial Class week7
         ' declaration
         ' 
         declaration.BackColor = Color.Transparent
+        declaration.Cursor = Cursors.Hand
         declaration.Image = My.Resources.Resources.opbtnred
         declaration.Location = New Point(428, 65)
         declaration.Name = "declaration"
@@ -185,6 +189,7 @@ Partial Class week7
         ' Types
         ' 
         Types.BackColor = Color.Transparent
+        Types.Cursor = Cursors.Hand
         Types.Image = My.Resources.Resources.opbtnred
         Types.Location = New Point(397, 65)
         Types.Name = "Types"
@@ -196,6 +201,7 @@ Partial Class week7
         ' Array
         ' 
         Array.BackColor = Color.Transparent
+        Array.Cursor = Cursors.Hand
         Array.Image = My.Resources.Resources.opbtnred
         Array.Location = New Point(366, 65)
         Array.Name = "Array"
@@ -329,6 +335,7 @@ Partial Class week7
         ' b5
         ' 
         b5.BackColor = Color.Transparent
+        b5.Cursor = Cursors.Hand
         b5.Image = My.Resources.Resources.b24
         b5.Location = New Point(322, 196)
         b5.Name = "b5"
@@ -340,6 +347,7 @@ Partial Class week7
         ' b4
         ' 
         b4.BackColor = Color.Transparent
+        b4.Cursor = Cursors.Hand
         b4.Image = My.Resources.Resources.b19
         b4.Location = New Point(254, 196)
         b4.Name = "b4"
@@ -351,6 +359,7 @@ Partial Class week7
         ' b3
         ' 
         b3.BackColor = Color.Transparent
+        b3.Cursor = Cursors.Hand
         b3.Image = My.Resources.Resources.b21
         b3.Location = New Point(189, 196)
         b3.Name = "b3"
@@ -362,6 +371,7 @@ Partial Class week7
         ' b2
         ' 
         b2.BackColor = Color.Transparent
+        b2.Cursor = Cursors.Hand
         b2.Image = My.Resources.Resources.b25
         b2.Location = New Point(125, 196)
         b2.Name = "b2"
@@ -373,6 +383,7 @@ Partial Class week7
         ' b1
         ' 
         b1.BackColor = Color.Transparent
+        b1.Cursor = Cursors.Hand
         b1.Image = My.Resources.Resources.b26
         b1.Location = New Point(58, 196)
         b1.Name = "b1"

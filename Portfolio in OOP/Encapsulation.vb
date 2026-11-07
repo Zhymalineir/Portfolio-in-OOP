@@ -35,7 +35,6 @@ Public Class Encapsulation
         End Function
     End Class
 
-    ' ===== Machine state =====
     Private Enum AtmState
         Welcome
         PinEntry
@@ -50,27 +49,31 @@ Public Class Encapsulation
     Private selectedOperation As String = ""
     Private buffer As String = ""
     Private pinAttempts As Integer = 0
+    Private idleImage As Image
 
     Private Const MaxPinLength As Integer = 6
     Private Const MaxAmountLength As Integer = 7
     Private Const MaxAttempts As Integer = 3
 
-    ' ===== Load =====
     Private Sub Encapsulation_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         TextBox2.BackColor = ColorTranslator.FromHtml("#0c0b1d")
         TextBox3.BackColor = ColorTranslator.FromHtml("#0c0b1d")
         TextBox1.ReadOnly = True
 
-        Label2.Parent = PictureBox5
-        Label3.Parent = PictureBox5
-        Label4.Parent = PictureBox5
+        SetParentKeepPos(Label1, PictureBox2)
+        SetParentKeepPos(Label2, PictureBox5)
+        SetParentKeepPos(Label3, PictureBox5)
+        SetParentKeepPos(Label4, PictureBox5)
 
-        Label2.Parent = PictureBox5
-        Label3.Parent = PictureBox5
-        Label4.Parent = PictureBox5
+        SetParentKeepPos(insertcard, PictureBox2)
+
+        For Each c As Control In {back, enter, num0, num1, num2, num3, num4,
+                          num5, num6, num7, num8, num9}
+            SetParentKeepPos(c, PictureBox1)
+        Next
+
         AlignMenuLabels()
 
-        ' Buttons are always visible
         For Each c As Control In {checkbalancebtn, deposit, withdraw, enter, back, insertcard}
             c.Visible = True
         Next
@@ -86,25 +89,31 @@ Public Class Encapsulation
         Next
 
         GoToWelcome()
+
+        idleImage = gifbox.Image
     End Sub
 
-    ' Puts each label on the left edge of the screen, level with its button
+    Private Sub SetParentKeepPos(c As Control, newParent As Control)
+        Dim screenPos As Point = c.Parent.PointToScreen(c.Location)
+        c.Parent = newParent
+        c.Location = newParent.PointToClient(screenPos)
+    End Sub
+
     Private Sub AlignMenuLabels()
-        PlaceLabel(Label2, checkbalancebtn)   ' orange: Balance Inquiry
-        PlaceLabel(Label3, deposit)           ' blue: Deposit
-        PlaceLabel(Label4, withdraw)          ' green: Withdraw
+        PlaceLabel(Label2, checkbalancebtn)
+        PlaceLabel(Label3, deposit)
+        PlaceLabel(Label4, withdraw)
     End Sub
 
     Private Sub PlaceLabel(lbl As Label, btn As Control)
         Dim btnScreen As Point = btn.Parent.PointToScreen(btn.Location)
         Dim btnInScreenPic As Point = PictureBox5.PointToClient(btnScreen)
 
-        lbl.Left = 32                                             ' distance from the screen's left edge
-        lbl.Top = btnInScreenPic.Y + (btn.Height - lbl.Height) \ 2  ' vertically centered on the button
+        lbl.Left = 32
+        lbl.Top = btnInScreenPic.Y + (btn.Height - lbl.Height) \ 2
         lbl.BringToFront()
     End Sub
 
-    ' ===== Screens =====
     Private Sub GoToWelcome()
         state = AtmState.Welcome
         selectedOperation = ""
@@ -167,7 +176,6 @@ Public Class Encapsulation
         SetMenuLabels(False)
     End Sub
 
-    ' Label2-4 only show on the menu page
     Private Sub SetMenuLabels(show As Boolean)
         Label2.Visible = show
         Label3.Visible = show
@@ -182,7 +190,6 @@ Public Class Encapsulation
         nextAction()
     End Function
 
-    ' ===== Display =====
     Private Sub RenderInput()
         Select Case state
             Case AtmState.PinEntry
@@ -196,7 +203,6 @@ Public Class Encapsulation
         End Select
     End Sub
 
-    ' ===== Keypad =====
     Private Sub NumPad_Click(sender As Object, e As EventArgs)
         PressDigit(CStr(CType(sender, Control).Tag))
     End Sub
@@ -207,7 +213,7 @@ Public Class Encapsulation
                 If buffer.Length < MaxPinLength Then buffer &= digit
             Case AtmState.AmountEntry
                 If buffer.Length < MaxAmountLength Then
-                    If buffer = "" AndAlso digit = "0" Then Exit Sub ' no leading zeros
+                    If buffer = "" AndAlso digit = "0" Then Exit Sub
                     buffer &= digit
                 End If
             Case Else
@@ -216,9 +222,15 @@ Public Class Encapsulation
         RenderInput()
     End Sub
 
-    ' ===== Buttons =====
-    Private Sub insertcard_Click(sender As Object, e As EventArgs) Handles insertcard.Click
-        If state = AtmState.Welcome Then GoToPinEntry()
+    Private Async Sub insertcard_Click(sender As Object, e As EventArgs) Handles insertcard.Click
+        If state <> AtmState.Welcome Then Exit Sub
+        state = AtmState.Busy
+
+        TextBox2.Visible = False
+        TextBox3.Visible = False
+
+        Await PlayGif(My.Resources._in, My.Resources.ATMACTIVE)
+        GoToPinEntry()
     End Sub
 
     Private Async Sub enter_Click(sender As Object, e As EventArgs) Handles enter.Click
@@ -233,7 +245,7 @@ Public Class Encapsulation
                 Else
                     pinAttempts += 1
                     If pinAttempts >= MaxAttempts Then
-                        Await FlashMessage("Card Blocked", AddressOf GoToWelcome)
+                        Await FlashMessage("Card Blocked", Sub() LogOut())
                     Else
                         Await FlashMessage("Wrong password", AddressOf GoToPinEntry)
                     End If
@@ -261,14 +273,14 @@ Public Class Encapsulation
         End Select
     End Sub
 
-    Private Sub back_Click(sender As Object, e As EventArgs) Handles back.Click
+    Private Async Sub back_Click(sender As Object, e As EventArgs) Handles back.Click
         Select Case state
             Case AtmState.PinEntry
                 If buffer.Length > 0 Then
                     buffer = buffer.Substring(0, buffer.Length - 1)
                     RenderInput()
                 Else
-                    GoToWelcome()
+                    Await LogOut()
                 End If
 
             Case AtmState.AmountEntry
@@ -283,7 +295,7 @@ Public Class Encapsulation
                 ShowMenu()
 
             Case AtmState.Menu
-                GoToWelcome()
+                Await LogOut()
         End Select
     End Sub
 
@@ -302,4 +314,39 @@ Public Class Encapsulation
         If state = AtmState.Menu Then ShowAmountEntry("Withdraw", "Enter Withdraw Amount")
     End Sub
 
+    Private Function GetGifDuration(img As Image) As Integer
+        Try
+            Dim fd As New Imaging.FrameDimension(img.FrameDimensionsList(0))
+            Dim frames As Integer = img.GetFrameCount(fd)
+            Dim item = img.GetPropertyItem(&H5100)
+            Dim total As Integer = 0
+            For i As Integer = 0 To frames - 1
+                total += BitConverter.ToInt32(item.Value, i * 4) * 10
+            Next
+            Return Math.Max(total, 100)
+        Catch
+            Return 1500
+        End Try
+    End Function
+
+    Private Async Function LogOut() As Task
+        state = AtmState.Busy
+        TextBox1.Visible = False
+        TextBox2.Visible = False
+        TextBox3.Visible = False
+        SetMenuLabels(False)
+
+        Await PlayGif(My.Resources.out, idleImage)
+        GoToWelcome()
+    End Function
+
+    Private Async Function PlayGif(gif As Image, finalImage As Image) As Task
+        Dim duration As Integer = GetGifDuration(gif)
+
+        gifbox.Image = gif
+        gifbox.BringToFront()
+        Await Task.Delay(duration)
+
+        gifbox.Image = finalImage
+    End Function
 End Class

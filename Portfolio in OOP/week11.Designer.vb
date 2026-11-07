@@ -151,6 +151,7 @@ Partial Class week11
         ' 
         ' b4
         ' 
+        b4.Cursor = Cursors.Hand
         b4.Image = My.Resources.Resources.b15
         b4.Location = New Point(236, 425)
         b4.Name = "b4"
@@ -161,6 +162,7 @@ Partial Class week11
         ' 
         ' b3
         ' 
+        b3.Cursor = Cursors.Hand
         b3.Image = My.Resources.Resources.b18
         b3.Location = New Point(236, 355)
         b3.Name = "b3"
@@ -171,6 +173,7 @@ Partial Class week11
         ' 
         ' b2
         ' 
+        b2.Cursor = Cursors.Hand
         b2.Image = My.Resources.Resources.b19
         b2.Location = New Point(236, 285)
         b2.Name = "b2"
@@ -181,6 +184,7 @@ Partial Class week11
         ' 
         ' b1
         ' 
+        b1.Cursor = Cursors.Hand
         b1.Image = My.Resources.Resources.b12
         b1.Location = New Point(236, 215)
         b1.Name = "b1"
@@ -218,6 +222,7 @@ Partial Class week11
         ' 
         ' btn1
         ' 
+        btn1.Cursor = Cursors.Hand
         btn1.Image = My.Resources.Resources.btn1
         btn1.Location = New Point(53, 186)
         btn1.Name = "btn1"
@@ -228,6 +233,7 @@ Partial Class week11
         ' 
         ' btn3
         ' 
+        btn3.Cursor = Cursors.Hand
         btn3.Image = My.Resources.Resources.btn3
         btn3.Location = New Point(53, 291)
         btn3.Name = "btn3"
@@ -238,6 +244,7 @@ Partial Class week11
         ' 
         ' btn2
         ' 
+        btn2.Cursor = Cursors.Hand
         btn2.Image = My.Resources.Resources.btn2
         btn2.Location = New Point(53, 238)
         btn2.Name = "btn2"
@@ -248,6 +255,7 @@ Partial Class week11
         ' 
         ' btn5
         ' 
+        btn5.Cursor = Cursors.Hand
         btn5.Image = My.Resources.Resources.btn5
         btn5.Location = New Point(53, 393)
         btn5.Name = "btn5"
@@ -258,6 +266,7 @@ Partial Class week11
         ' 
         ' btn4
         ' 
+        btn4.Cursor = Cursors.Hand
         btn4.Image = My.Resources.Resources.btn4
         btn4.Location = New Point(53, 340)
         btn4.Name = "btn4"
@@ -292,6 +301,7 @@ Partial Class week11
         backbtn.BackColor = Color.Transparent
         backbtn.BackgroundImage = My.Resources.Resources.backbtn
         backbtn.BackgroundImageLayout = ImageLayout.Zoom
+        backbtn.Cursor = Cursors.Hand
         backbtn.Location = New Point(80, 39)
         backbtn.Margin = New Padding(3, 2, 3, 2)
         backbtn.Name = "backbtn"

@@ -200,6 +200,7 @@ Partial Class week2
         ' 
         ' PictureBox10
         ' 
+        PictureBox10.Cursor = Cursors.Hand
         PictureBox10.Image = My.Resources.Resources._17
         PictureBox10.Location = New Point(384, 422)
         PictureBox10.Name = "PictureBox10"
@@ -210,6 +211,7 @@ Partial Class week2
         ' 
         ' PictureBox11
         ' 
+        PictureBox11.Cursor = Cursors.Hand
         PictureBox11.Image = My.Resources.Resources._13
         PictureBox11.Location = New Point(384, 333)
         PictureBox11.Name = "PictureBox11"
@@ -220,6 +222,7 @@ Partial Class week2
         ' 
         ' PictureBox12
         ' 
+        PictureBox12.Cursor = Cursors.Hand
         PictureBox12.Image = My.Resources.Resources._14
         PictureBox12.Location = New Point(384, 509)
         PictureBox12.Name = "PictureBox12"
@@ -230,6 +233,7 @@ Partial Class week2
         ' 
         ' PictureBox13
         ' 
+        PictureBox13.Cursor = Cursors.Hand
         PictureBox13.Image = My.Resources.Resources._15
         PictureBox13.Location = New Point(384, 155)
         PictureBox13.Name = "PictureBox13"
@@ -240,6 +244,7 @@ Partial Class week2
         ' 
         ' PictureBox14
         ' 
+        PictureBox14.Cursor = Cursors.Hand
         PictureBox14.Image = My.Resources.Resources._16
         PictureBox14.Location = New Point(384, 242)
         PictureBox14.Name = "PictureBox14"
@@ -252,6 +257,7 @@ Partial Class week2
         ' 
         class_and_objects.AutoSize = True
         class_and_objects.BackColor = Color.Transparent
+        class_and_objects.Cursor = Cursors.Hand
         class_and_objects.Font = New Font("rainyhearts", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         class_and_objects.ForeColor = Color.FromArgb(CByte(64), CByte(0), CByte(0))
         class_and_objects.Location = New Point(441, 163)
@@ -264,6 +270,7 @@ Partial Class week2
         ' 
         encapsulation.AutoSize = True
         encapsulation.BackColor = Color.Transparent
+        encapsulation.Cursor = Cursors.Hand
         encapsulation.Font = New Font("rainyhearts", 19.8000011F, FontStyle.Bold)
         encapsulation.ForeColor = Color.FromArgb(CByte(64), CByte(0), CByte(0))
         encapsulation.Location = New Point(440, 250)
@@ -276,6 +283,7 @@ Partial Class week2
         ' 
         polymorphism.AutoSize = True
         polymorphism.BackColor = Color.Transparent
+        polymorphism.Cursor = Cursors.Hand
         polymorphism.Font = New Font("rainyhearts", 19.8000011F, FontStyle.Bold)
         polymorphism.ForeColor = Color.FromArgb(CByte(64), CByte(0), CByte(0))
         polymorphism.Location = New Point(444, 341)
@@ -288,6 +296,7 @@ Partial Class week2
         ' 
         inheritance.AutoSize = True
         inheritance.BackColor = Color.Transparent
+        inheritance.Cursor = Cursors.Hand
         inheritance.Font = New Font("rainyhearts", 19.8000011F, FontStyle.Bold)
         inheritance.ForeColor = Color.FromArgb(CByte(64), CByte(0), CByte(0))
         inheritance.Location = New Point(457, 427)
@@ -300,6 +309,7 @@ Partial Class week2
         ' 
         interfaces.AutoSize = True
         interfaces.BackColor = Color.Transparent
+        interfaces.Cursor = Cursors.Hand
         interfaces.Font = New Font("rainyhearts", 19.8000011F, FontStyle.Bold)
         interfaces.ForeColor = Color.FromArgb(CByte(64), CByte(0), CByte(0))
         interfaces.Location = New Point(462, 513)
@@ -323,6 +333,7 @@ Partial Class week2
         ' PictureBox15
         ' 
         PictureBox15.BackColor = Color.Transparent
+        PictureBox15.Cursor = Cursors.Hand
         PictureBox15.Image = My.Resources.Resources.coin
         PictureBox15.Location = New Point(666, 161)
         PictureBox15.Name = "PictureBox15"
@@ -334,6 +345,7 @@ Partial Class week2
         ' PictureBox16
         ' 
         PictureBox16.BackColor = Color.Transparent
+        PictureBox16.Cursor = Cursors.Hand
         PictureBox16.Image = My.Resources.Resources.coin
         PictureBox16.Location = New Point(666, 343)
         PictureBox16.Name = "PictureBox16"
@@ -345,6 +357,7 @@ Partial Class week2
         ' PictureBox17
         ' 
         PictureBox17.BackColor = Color.Transparent
+        PictureBox17.Cursor = Cursors.Hand
         PictureBox17.Image = My.Resources.Resources.coin
         PictureBox17.Location = New Point(666, 518)
         PictureBox17.Name = "PictureBox17"
@@ -356,6 +369,7 @@ Partial Class week2
         ' PictureBox18
         ' 
         PictureBox18.BackColor = Color.Transparent
+        PictureBox18.Cursor = Cursors.Hand
         PictureBox18.Image = My.Resources.Resources.coin
         PictureBox18.Location = New Point(666, 432)
         PictureBox18.Name = "PictureBox18"
@@ -367,6 +381,7 @@ Partial Class week2
         ' PictureBox19
         ' 
         PictureBox19.BackColor = Color.Transparent
+        PictureBox19.Cursor = Cursors.Hand
         PictureBox19.Image = My.Resources.Resources.coin
         PictureBox19.Location = New Point(666, 252)
         PictureBox19.Name = "PictureBox19"
@@ -391,6 +406,7 @@ Partial Class week2
         ' 
         output.AutoSize = True
         output.BackColor = Color.Transparent
+        output.Cursor = Cursors.Hand
         output.Font = New Font("rainyhearts", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         output.ForeColor = Color.FromArgb(CByte(64), CByte(0), CByte(0))
         output.Location = New Point(571, 46)

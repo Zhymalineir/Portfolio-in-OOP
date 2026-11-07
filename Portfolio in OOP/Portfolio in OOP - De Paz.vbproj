@@ -248,6 +248,9 @@
     <None Update="Assets\r_priest_walk_right.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Elements\atm.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Elements\btnFINALS.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -261,6 +264,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Elements\FINALS_BANNEr.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Elements\in.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Elements\m4.png">
@@ -283,6 +289,9 @@
     </None>
     <None Update="Elements\ost.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Elements\out.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Elements\plusbtn.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
