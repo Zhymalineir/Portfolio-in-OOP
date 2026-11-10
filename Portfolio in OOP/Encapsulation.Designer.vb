@@ -354,7 +354,7 @@ Partial Class Encapsulation
         insertcard.BackColor = Color.Transparent
         insertcard.Cursor = Cursors.Hand
         insertcard.Image = My.Resources.Resources._0btn
-        insertcard.Location = New Point(46, 392)
+        insertcard.Location = New Point(46, 400)
         insertcard.Name = "insertcard"
         insertcard.Size = New Size(262, 89)
         insertcard.SizeMode = PictureBoxSizeMode.StretchImage
@@ -365,7 +365,7 @@ Partial Class Encapsulation
         ' 
         PictureBox2.BackColor = Color.Transparent
         PictureBox2.Image = My.Resources.Resources.menu1
-        PictureBox2.Location = New Point(12, 71)
+        PictureBox2.Location = New Point(12, 79)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(328, 472)
         PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
@@ -378,7 +378,7 @@ Partial Class Encapsulation
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("rainyhearts", 48F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.Maroon
-        Label1.Location = New Point(37, 104)
+        Label1.Location = New Point(37, 112)
         Label1.Name = "Label1"
         Label1.Size = New Size(274, 60)
         Label1.TabIndex = 31
@@ -388,7 +388,7 @@ Partial Class Encapsulation
         ' 
         gifbox.BackColor = Color.Transparent
         gifbox.Image = My.Resources.Resources.atm
-        gifbox.Location = New Point(27, 192)
+        gifbox.Location = New Point(27, 200)
         gifbox.Name = "gifbox"
         gifbox.Size = New Size(298, 177)
         gifbox.SizeMode = PictureBoxSizeMode.StretchImage
