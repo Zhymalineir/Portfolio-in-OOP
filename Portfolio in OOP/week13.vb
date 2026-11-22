@@ -14,30 +14,34 @@ Public Class week13
         ' Set parenting for proper WinForms transparency over PictureBoxes
         lbl1.Parent = pb2
         lbl2.Parent = pb2
-        lbl3.Parent = pb2
-        lbl4.Parent = pb2
-        lbl5.Parent = pb2
-        lbl6.Parent = pb2
-        lbl7.Parent = pb2
         txtCropId.Parent = pb2
-        txtType.Parent = pb2
+        lbl4.Parent = pb2
         txtCropName.Parent = pb2
-        txtSeedCost.Parent = pb2
-        txtGrowth.Parent = pb2
-        txtSellCost.Parent = pb2
+        lbl3.Parent = pb2
+        txtType.Parent = pb2
+        lbl5.Parent = pb2
+        numSeedCost.Parent = pb2
+        lbl6.Parent = pb2
+        numGrowth.Parent = pb2
+        lbl7.Parent = pb2
+        numSellCost.Parent = pb2
         btnCreate.Parent = pb2
-        btnRead.Parent = pb2
         btnUpdate.Parent = pb2
-        btnDelete.Parent = pb2
 
         lbl8.Parent = pb1
         DataGridView1.Parent = pb1
+        btnRead.Parent = pb1
+        btnDelete.Parent = pb1
+        btnRead.BringToFront()
+        btnDelete.BringToFront()
 
         ConfigureGrid()
 
         Try
             InitializeDatabase()
             LoadCrops()
+            DataGridView1.ClearSelection()
+            ClearFields()
         Catch ex As Exception
             ShowDatabaseError(ex)
         End Try
@@ -94,24 +98,14 @@ Public Class week13
         End Using
     End Sub
 
-    Private Sub LoadCrops(Optional whereClause As String = "", Optional parameters As List(Of MySqlParameter) = Nothing)
+    Private Sub LoadCrops()
         Using connection As New MySqlConnection(DatabaseConnectionString())
             connection.Open()
-            Dim sql As String = "SELECT crop_id AS `Crop ID`, `type` AS `Type`, crop_name AS `Crop Name`, " &
+            Dim sql As String = "SELECT crop_id AS `Crop ID`, crop_name AS `Crop Name`, `type` AS `Type`, " &
                                 "seed_cost AS `Seed Cost`, growth AS `Days of Growth`, sell_cost AS `Sell Cost` " &
-                                "FROM crops"
-            If Not String.IsNullOrWhiteSpace(whereClause) Then
-                sql &= " WHERE " & whereClause
-            End If
-            sql &= " ORDER BY crop_id ASC"
+                                "FROM crops ORDER BY crop_id ASC"
 
             Using command As New MySqlCommand(sql, connection)
-                If parameters IsNot Nothing Then
-                    For Each p In parameters
-                        command.Parameters.Add(p)
-                    Next
-                End If
-
                 Using adapter As New MySqlDataAdapter(command)
                     crops = New DataTable()
                     adapter.Fill(crops)
@@ -129,29 +123,6 @@ Public Class week13
     End Sub
 
     Private Sub btnCreate_Click(sender As Object, e As EventArgs) Handles btnCreate.Click
-        If String.IsNullOrWhiteSpace(txtCropName.Text) OrElse String.IsNullOrWhiteSpace(txtType.Text) Then
-            MessageBox.Show("Please enter both Crop Name and Type.", "Missing Details", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Return
-        End If
-
-        Dim seedCost As Decimal = 0D
-        If Not String.IsNullOrWhiteSpace(txtSeedCost.Text) AndAlso Not Decimal.TryParse(txtSeedCost.Text.Trim(), seedCost) Then
-            MessageBox.Show("Seed Cost must be a valid number.", "Invalid Value", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Return
-        End If
-
-        Dim growth As Integer = 0
-        If Not String.IsNullOrWhiteSpace(txtGrowth.Text) AndAlso Not Integer.TryParse(txtGrowth.Text.Trim(), growth) Then
-            MessageBox.Show("Days of Growth must be a whole number.", "Invalid Value", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Return
-        End If
-
-        Dim sellCost As Decimal = 0D
-        If Not String.IsNullOrWhiteSpace(txtSellCost.Text) AndAlso Not Decimal.TryParse(txtSellCost.Text.Trim(), sellCost) Then
-            MessageBox.Show("Sell Cost must be a valid number.", "Invalid Value", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Return
-        End If
-
         Dim cropId As Integer = 0
         If Not String.IsNullOrWhiteSpace(txtCropId.Text) Then
             If Not Integer.TryParse(txtCropId.Text.Trim(), cropId) OrElse cropId <= 0 Then
@@ -159,6 +130,15 @@ Public Class week13
                 Return
             End If
         End If
+
+        If String.IsNullOrWhiteSpace(txtCropName.Text) OrElse String.IsNullOrWhiteSpace(txtType.Text) Then
+            MessageBox.Show("Please enter both Crop Name and Type.", "Missing Details", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Return
+        End If
+
+        Dim seedCost As Decimal = numSeedCost.Value
+        Dim growth As Integer = Convert.ToInt32(numGrowth.Value)
+        Dim sellCost As Decimal = numSellCost.Value
 
         Try
             Using connection As New MySqlConnection(DatabaseConnectionString())
@@ -194,73 +174,25 @@ Public Class week13
     End Sub
 
     Private Sub btnRead_Click(sender As Object, e As EventArgs) Handles btnRead.Click
-        Try
-            Dim conditions As New List(Of String)()
-            Dim parameters As New List(Of MySqlParameter)()
+        Dim selectedRow As DataRow = Nothing
 
-            If Not String.IsNullOrWhiteSpace(txtCropId.Text) Then
-                Dim id As Integer
-                If Integer.TryParse(txtCropId.Text.Trim(), id) Then
-                    conditions.Add("crop_id = @id")
-                    parameters.Add(New MySqlParameter("@id", id))
-                End If
+        If DataGridView1.SelectedRows.Count > 0 AndAlso DataGridView1.SelectedRows(0).DataBoundItem IsNot Nothing Then
+            Dim rowView = TryCast(DataGridView1.SelectedRows(0).DataBoundItem, DataRowView)
+            If rowView IsNot Nothing Then
+                selectedRow = rowView.Row
             End If
-
-            If Not String.IsNullOrWhiteSpace(txtType.Text) Then
-                conditions.Add("`type` LIKE @type")
-                parameters.Add(New MySqlParameter("@type", "%" & txtType.Text.Trim() & "%"))
+        ElseIf DataGridView1.CurrentRow IsNot Nothing AndAlso DataGridView1.CurrentRow.DataBoundItem IsNot Nothing Then
+            Dim rowView = TryCast(DataGridView1.CurrentRow.DataBoundItem, DataRowView)
+            If rowView IsNot Nothing Then
+                selectedRow = rowView.Row
             End If
+        End If
 
-            If Not String.IsNullOrWhiteSpace(txtCropName.Text) Then
-                conditions.Add("crop_name LIKE @name")
-                parameters.Add(New MySqlParameter("@name", "%" & txtCropName.Text.Trim() & "%"))
-            End If
-
-            If Not String.IsNullOrWhiteSpace(txtSeedCost.Text) Then
-                Dim seed As Decimal
-                If Decimal.TryParse(txtSeedCost.Text.Trim(), seed) Then
-                    conditions.Add("seed_cost = @seed")
-                    parameters.Add(New MySqlParameter("@seed", seed))
-                End If
-            End If
-
-            If Not String.IsNullOrWhiteSpace(txtGrowth.Text) Then
-                Dim growthVal As Integer
-                If Integer.TryParse(txtGrowth.Text.Trim(), growthVal) Then
-                    conditions.Add("growth = @growth")
-                    parameters.Add(New MySqlParameter("@growth", growthVal))
-                End If
-            End If
-
-            If Not String.IsNullOrWhiteSpace(txtSellCost.Text) Then
-                Dim sell As Decimal
-                If Decimal.TryParse(txtSellCost.Text.Trim(), sell) Then
-                    conditions.Add("sell_cost = @sell")
-                    parameters.Add(New MySqlParameter("@sell", sell))
-                End If
-            End If
-
-            If conditions.Count = 0 Then
-                LoadCrops()
-                If crops IsNot Nothing AndAlso crops.Rows.Count > 0 Then
-                    PopulateFieldsFromRow(crops.Rows(0))
-                End If
-                MessageBox.Show("Displaying all " & crops.Rows.Count & " crop(s) in farm.", "Farm Records", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Else
-                Dim whereClause As String = String.Join(" AND ", conditions)
-                LoadCrops(whereClause, parameters)
-
-                If crops IsNot Nothing AndAlso crops.Rows.Count > 0 Then
-                    PopulateFieldsFromRow(crops.Rows(0))
-                    MessageBox.Show("Found " & crops.Rows.Count & " matching crop(s).", "Crop Found", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                Else
-                    MessageBox.Show("No crops found matching your search criteria.", "No Results", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                    LoadCrops()
-                End If
-            End If
-        Catch ex As Exception
-            ShowDatabaseError(ex)
-        End Try
+        If selectedRow IsNot Nothing Then
+            PopulateFieldsFromRow(selectedRow)
+        Else
+            MessageBox.Show("Please select a plant from the farm table to read.", "No Plant Selected", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
     End Sub
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
@@ -275,23 +207,9 @@ Public Class week13
             Return
         End If
 
-        Dim seedCost As Decimal = 0D
-        If Not String.IsNullOrWhiteSpace(txtSeedCost.Text) AndAlso Not Decimal.TryParse(txtSeedCost.Text.Trim(), seedCost) Then
-            MessageBox.Show("Seed Cost must be a valid number.", "Invalid Value", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Return
-        End If
-
-        Dim growth As Integer = 0
-        If Not String.IsNullOrWhiteSpace(txtGrowth.Text) AndAlso Not Integer.TryParse(txtGrowth.Text.Trim(), growth) Then
-            MessageBox.Show("Days of Growth must be a whole number.", "Invalid Value", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Return
-        End If
-
-        Dim sellCost As Decimal = 0D
-        If Not String.IsNullOrWhiteSpace(txtSellCost.Text) AndAlso Not Decimal.TryParse(txtSellCost.Text.Trim(), sellCost) Then
-            MessageBox.Show("Sell Cost must be a valid number.", "Invalid Value", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Return
-        End If
+        Dim seedCost As Decimal = numSeedCost.Value
+        Dim growth As Integer = Convert.ToInt32(numGrowth.Value)
+        Dim sellCost As Decimal = numSellCost.Value
 
         Try
             Dim rowsAffected As Integer = 0
@@ -357,20 +275,12 @@ Public Class week13
     End Sub
 
     Private Sub backbtn_Click(sender As Object, e As EventArgs) Handles backbtn.Click
-        Dim f As finals = TryCast(Me.MdiParent, finals)
-        If f Is Nothing Then
-            f = Application.OpenForms.OfType(Of finals)().FirstOrDefault()
-        End If
+        Dim f As finals = Application.OpenForms.OfType(Of finals)().FirstOrDefault()
+        If f Is Nothing Then f = New finals()
 
-        If f IsNot Nothing Then
-            f.Show()
-            f.ShowMainScreen()
-            f.BringToFront()
-        Else
-            f = New finals()
-            f.Show()
-            f.ShowMainScreen()
-        End If
+        f.Show()
+        f.ShowMainScreen()
+        Hide()
 
         Me.Close()
     End Sub
@@ -394,29 +304,20 @@ Public Class week13
     Private Sub PopulateFieldsFromRow(row As DataRow)
         If row Is Nothing Then Return
         txtCropId.Text = row("Crop ID").ToString()
-        txtType.Text = row("Type").ToString()
         txtCropName.Text = row("Crop Name").ToString()
-        txtSeedCost.Text = Convert.ToDecimal(row("Seed Cost")).ToString("0.##")
-        txtGrowth.Text = row("Days of Growth").ToString()
-        txtSellCost.Text = Convert.ToDecimal(row("Sell Cost")).ToString("0.##")
-    End Sub
-
-    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
-        If e.RowIndex >= 0 AndAlso e.RowIndex < DataGridView1.Rows.Count Then
-            Dim rowView = TryCast(DataGridView1.Rows(e.RowIndex).DataBoundItem, DataRowView)
-            If rowView IsNot Nothing Then
-                PopulateFieldsFromRow(rowView.Row)
-            End If
-        End If
+        txtType.Text = row("Type").ToString()
+        numSeedCost.Value = Math.Min(numSeedCost.Maximum, Math.Max(numSeedCost.Minimum, Convert.ToDecimal(row("Seed Cost"))))
+        numGrowth.Value = Math.Min(numGrowth.Maximum, Math.Max(numGrowth.Minimum, Convert.ToDecimal(row("Days of Growth"))))
+        numSellCost.Value = Math.Min(numSellCost.Maximum, Math.Max(numSellCost.Minimum, Convert.ToDecimal(row("Sell Cost"))))
     End Sub
 
     Private Sub ClearFields()
         txtCropId.Clear()
-        txtType.Clear()
         txtCropName.Clear()
-        txtSeedCost.Clear()
-        txtGrowth.Clear()
-        txtSellCost.Clear()
+        txtType.Clear()
+        numSeedCost.Value = 0D
+        numGrowth.Value = 0D
+        numSellCost.Value = 0D
         DataGridView1.ClearSelection()
     End Sub
 

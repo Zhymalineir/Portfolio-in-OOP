@@ -23,12 +23,14 @@ Public Class finals
         ReparentKeepPosition(banner, bg)
         ReparentKeepPosition(backbtn, bg)
 
+        ReparentKeepPosition(wk13, woodboard)
         ReparentKeepPosition(wk10, woodboard)
         ReparentKeepPosition(wk11, woodboard)
         ReparentKeepPosition(arrow1, woodboard)
         ReparentKeepPosition(arrow2, woodboard)
         ReparentKeepPosition(arrow3, woodboard)
 
+        wk13.Visible = False
         wk10.Visible = True
         wk11.Visible = True
         arrow1.Visible = True
@@ -45,6 +47,7 @@ Public Class finals
     End Sub
 
     Private Sub arrow1_Click(sender As Object, e As EventArgs) Handles arrow1.Click
+        wk13.Visible = True
         wk10.Visible = False
         wk11.Visible = False
         arrow1.Visible = False
@@ -53,6 +56,7 @@ Public Class finals
     End Sub
 
     Private Sub arrow2_Click(sender As Object, e As EventArgs) Handles arrow2.Click
+        wk13.Visible = False
         wk10.Visible = True
         wk11.Visible = True
         arrow1.Visible = True
@@ -85,7 +89,9 @@ Public Class finals
     Private Sub wk11_Click(sender As Object, e As EventArgs) Handles wk11.Click
         OpenWeek(New week11())
     End Sub
-
+    Private Sub wk13_Click(sender As Object, e As EventArgs) Handles wk13.Click
+        OpenWeek(New week13())
+    End Sub
     Private Sub backbtn_Click(sender As Object, e As EventArgs) Handles backbtn.Click
         Dim Landing_Page As Landing_Page = Application.OpenForms.OfType(Of Landing_Page)().FirstOrDefault()
         If Landing_Page Is Nothing Then
@@ -103,5 +109,6 @@ Public Class finals
     Private Sub finals_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
         If e.CloseReason = CloseReason.UserClosing Then Application.Exit()
     End Sub
+
 
 End Class

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class week13
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,43 +20,58 @@ Partial Class week13
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(week13))
         pb1 = New PictureBox()
         pb2 = New PictureBox()
         lbl1 = New Label()
         lbl2 = New Label()
-        lbl3 = New Label()
         lbl4 = New Label()
+        lbl3 = New Label()
         lbl5 = New Label()
         lbl6 = New Label()
         lbl7 = New Label()
         lbl8 = New Label()
         txtCropId = New TextBox()
-        txtType = New TextBox()
         txtCropName = New TextBox()
-        txtSeedCost = New TextBox()
-        txtGrowth = New TextBox()
-        txtSellCost = New TextBox()
+        txtType = New TextBox()
+        numSeedCost = New NumericUpDown()
+        numGrowth = New NumericUpDown()
+        numSellCost = New NumericUpDown()
         btnCreate = New PictureBox()
-        btnRead = New PictureBox()
         btnUpdate = New PictureBox()
+        btnRead = New PictureBox()
         btnDelete = New PictureBox()
         DataGridView1 = New DataGridView()
         backbtn = New PictureBox()
         CType(pb1, ComponentModel.ISupportInitialize).BeginInit()
         CType(pb2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(numSeedCost, ComponentModel.ISupportInitialize).BeginInit()
+        CType(numGrowth, ComponentModel.ISupportInitialize).BeginInit()
+        CType(numSellCost, ComponentModel.ISupportInitialize).BeginInit()
         CType(btnCreate, ComponentModel.ISupportInitialize).BeginInit()
-        CType(btnRead, ComponentModel.ISupportInitialize).BeginInit()
         CType(btnUpdate, ComponentModel.ISupportInitialize).BeginInit()
+        CType(btnRead, ComponentModel.ISupportInitialize).BeginInit()
         CType(btnDelete, ComponentModel.ISupportInitialize).BeginInit()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         CType(backbtn, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
-        ' pb2 (Left Board: Crop Details)
+        ' pb1
         ' 
+        pb1.BackColor = Color.Transparent
+        pb1.Image = My.Resources.Resources.menu1
+        pb1.Location = New Point(552, 166)
+        pb1.Name = "pb1"
+        pb1.Size = New Size(607, 424)
+        pb1.SizeMode = PictureBoxSizeMode.StretchImage
+        pb1.TabIndex = 0
+        pb1.TabStop = False
+        ' 
+        ' pb2
+        ' 
+        pb2.BackColor = Color.Transparent
         pb2.Image = My.Resources.Resources.menu1
         pb2.Location = New Point(29, 166)
         pb2.Name = "pb2"
@@ -65,7 +80,7 @@ Partial Class week13
         pb2.TabIndex = 1
         pb2.TabStop = False
         ' 
-        ' lbl1 (Crop Details)
+        ' lbl1
         ' 
         lbl1.AutoSize = True
         lbl1.BackColor = Color.Transparent
@@ -77,7 +92,7 @@ Partial Class week13
         lbl1.TabIndex = 0
         lbl1.Text = "Crop Details"
         ' 
-        ' lbl2 (Crop ID)
+        ' lbl2
         ' 
         lbl2.AutoSize = True
         lbl2.BackColor = Color.Transparent
@@ -88,6 +103,78 @@ Partial Class week13
         lbl2.Size = New Size(94, 22)
         lbl2.TabIndex = 1
         lbl2.Text = "Crop ID"
+        ' 
+        ' lbl4
+        ' 
+        lbl4.AutoSize = True
+        lbl4.BackColor = Color.Transparent
+        lbl4.Font = New Font("rainyhearts", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbl4.ForeColor = Color.Brown
+        lbl4.Location = New Point(45, 96)
+        lbl4.Name = "lbl4"
+        lbl4.Size = New Size(122, 22)
+        lbl4.TabIndex = 3
+        lbl4.Text = "Crop Name"
+        ' 
+        ' lbl3
+        ' 
+        lbl3.AutoSize = True
+        lbl3.BackColor = Color.Transparent
+        lbl3.Font = New Font("rainyhearts", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbl3.ForeColor = Color.Brown
+        lbl3.Location = New Point(45, 130)
+        lbl3.Name = "lbl3"
+        lbl3.Size = New Size(58, 22)
+        lbl3.TabIndex = 5
+        lbl3.Text = "Type"
+        ' 
+        ' lbl5
+        ' 
+        lbl5.AutoSize = True
+        lbl5.BackColor = Color.Transparent
+        lbl5.Font = New Font("rainyhearts", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbl5.ForeColor = Color.Brown
+        lbl5.Location = New Point(45, 164)
+        lbl5.Name = "lbl5"
+        lbl5.Size = New Size(111, 22)
+        lbl5.TabIndex = 7
+        lbl5.Text = "Seed Cost"
+        ' 
+        ' lbl6
+        ' 
+        lbl6.AutoSize = True
+        lbl6.BackColor = Color.Transparent
+        lbl6.Font = New Font("rainyhearts", 15.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbl6.ForeColor = Color.Brown
+        lbl6.Location = New Point(45, 198)
+        lbl6.Name = "lbl6"
+        lbl6.Size = New Size(147, 19)
+        lbl6.TabIndex = 9
+        lbl6.Text = "Days of Growth"
+        ' 
+        ' lbl7
+        ' 
+        lbl7.AutoSize = True
+        lbl7.BackColor = Color.Transparent
+        lbl7.Font = New Font("rainyhearts", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbl7.ForeColor = Color.Brown
+        lbl7.Location = New Point(45, 232)
+        lbl7.Name = "lbl7"
+        lbl7.Size = New Size(106, 22)
+        lbl7.TabIndex = 11
+        lbl7.Text = "Sell Cost"
+        ' 
+        ' lbl8
+        ' 
+        lbl8.AutoSize = True
+        lbl8.BackColor = Color.Transparent
+        lbl8.Font = New Font("rainyhearts", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lbl8.ForeColor = Color.Brown
+        lbl8.Location = New Point(35, 20)
+        lbl8.Name = "lbl8"
+        lbl8.Size = New Size(94, 35)
+        lbl8.TabIndex = 0
+        lbl8.Text = "Farm"
         ' 
         ' txtCropId
         ' 
@@ -101,17 +188,17 @@ Partial Class week13
         txtCropId.Size = New Size(255, 26)
         txtCropId.TabIndex = 2
         ' 
-        ' lbl3 (Type)
+        ' txtCropName
         ' 
-        lbl3.AutoSize = True
-        lbl3.BackColor = Color.Transparent
-        lbl3.Font = New Font("rainyhearts", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lbl3.ForeColor = Color.Brown
-        lbl3.Location = New Point(45, 96)
-        lbl3.Name = "lbl3"
-        lbl3.Size = New Size(58, 22)
-        lbl3.TabIndex = 3
-        lbl3.Text = "Type"
+        txtCropName.BackColor = Color.BlanchedAlmond
+        txtCropName.BorderStyle = BorderStyle.None
+        txtCropName.Font = New Font("rainyhearts", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        txtCropName.ForeColor = Color.Brown
+        txtCropName.Location = New Point(195, 94)
+        txtCropName.Multiline = True
+        txtCropName.Name = "txtCropName"
+        txtCropName.Size = New Size(255, 26)
+        txtCropName.TabIndex = 4
         ' 
         ' txtType
         ' 
@@ -119,177 +206,98 @@ Partial Class week13
         txtType.BorderStyle = BorderStyle.None
         txtType.Font = New Font("rainyhearts", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         txtType.ForeColor = Color.Brown
-        txtType.Location = New Point(195, 94)
+        txtType.Location = New Point(195, 128)
         txtType.Multiline = True
         txtType.Name = "txtType"
         txtType.Size = New Size(255, 26)
-        txtType.TabIndex = 4
+        txtType.TabIndex = 6
         ' 
-        ' lbl4 (Crop Name)
+        ' numSeedCost
         ' 
-        lbl4.AutoSize = True
-        lbl4.BackColor = Color.Transparent
-        lbl4.Font = New Font("rainyhearts", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lbl4.ForeColor = Color.Brown
-        lbl4.Location = New Point(45, 130)
-        lbl4.Name = "lbl4"
-        lbl4.Size = New Size(122, 22)
-        lbl4.TabIndex = 5
-        lbl4.Text = "Crop Name"
+        numSeedCost.BackColor = Color.BlanchedAlmond
+        numSeedCost.BorderStyle = BorderStyle.None
+        numSeedCost.DecimalPlaces = 2
+        numSeedCost.Font = New Font("rainyhearts", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        numSeedCost.ForeColor = Color.Brown
+        numSeedCost.Location = New Point(195, 162)
+        numSeedCost.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        numSeedCost.Name = "numSeedCost"
+        numSeedCost.Size = New Size(255, 26)
+        numSeedCost.TabIndex = 8
         ' 
-        ' txtCropName
+        ' numGrowth
         ' 
-        txtCropName.BackColor = Color.BlanchedAlmond
-        txtCropName.BorderStyle = BorderStyle.None
-        txtCropName.Font = New Font("rainyhearts", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtCropName.ForeColor = Color.Brown
-        txtCropName.Location = New Point(195, 128)
-        txtCropName.Multiline = True
-        txtCropName.Name = "txtCropName"
-        txtCropName.Size = New Size(255, 26)
-        txtCropName.TabIndex = 6
+        numGrowth.BackColor = Color.BlanchedAlmond
+        numGrowth.BorderStyle = BorderStyle.None
+        numGrowth.DecimalPlaces = 0
+        numGrowth.Font = New Font("rainyhearts", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        numGrowth.ForeColor = Color.Brown
+        numGrowth.Location = New Point(195, 196)
+        numGrowth.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        numGrowth.Name = "numGrowth"
+        numGrowth.Size = New Size(255, 26)
+        numGrowth.TabIndex = 10
         ' 
-        ' lbl5 (Seed Cost)
+        ' numSellCost
         ' 
-        lbl5.AutoSize = True
-        lbl5.BackColor = Color.Transparent
-        lbl5.Font = New Font("rainyhearts", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lbl5.ForeColor = Color.Brown
-        lbl5.Location = New Point(45, 164)
-        lbl5.Name = "lbl5"
-        lbl5.Size = New Size(111, 22)
-        lbl5.TabIndex = 7
-        lbl5.Text = "Seed Cost"
-        ' 
-        ' txtSeedCost
-        ' 
-        txtSeedCost.BackColor = Color.BlanchedAlmond
-        txtSeedCost.BorderStyle = BorderStyle.None
-        txtSeedCost.Font = New Font("rainyhearts", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtSeedCost.ForeColor = Color.Brown
-        txtSeedCost.Location = New Point(195, 162)
-        txtSeedCost.Multiline = True
-        txtSeedCost.Name = "txtSeedCost"
-        txtSeedCost.Size = New Size(255, 26)
-        txtSeedCost.TabIndex = 8
-        ' 
-        ' lbl6 (Days of Growth)
-        ' 
-        lbl6.AutoSize = True
-        lbl6.BackColor = Color.Transparent
-        lbl6.Font = New Font("rainyhearts", 15.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lbl6.ForeColor = Color.Brown
-        lbl6.Location = New Point(45, 198)
-        lbl6.Name = "lbl6"
-        lbl6.Size = New Size(147, 19)
-        lbl6.TabIndex = 9
-        lbl6.Text = "Days of Growth"
-        ' 
-        ' txtGrowth
-        ' 
-        txtGrowth.BackColor = Color.BlanchedAlmond
-        txtGrowth.BorderStyle = BorderStyle.None
-        txtGrowth.Font = New Font("rainyhearts", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtGrowth.ForeColor = Color.Brown
-        txtGrowth.Location = New Point(195, 196)
-        txtGrowth.Multiline = True
-        txtGrowth.Name = "txtGrowth"
-        txtGrowth.Size = New Size(255, 26)
-        txtGrowth.TabIndex = 10
-        ' 
-        ' lbl7 (Sell Cost)
-        ' 
-        lbl7.AutoSize = True
-        lbl7.BackColor = Color.Transparent
-        lbl7.Font = New Font("rainyhearts", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lbl7.ForeColor = Color.Brown
-        lbl7.Location = New Point(45, 232)
-        lbl7.Name = "lbl7"
-        lbl7.Size = New Size(106, 22)
-        lbl7.TabIndex = 11
-        lbl7.Text = "Sell Cost"
-        ' 
-        ' txtSellCost
-        ' 
-        txtSellCost.BackColor = Color.BlanchedAlmond
-        txtSellCost.BorderStyle = BorderStyle.None
-        txtSellCost.Font = New Font("rainyhearts", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtSellCost.ForeColor = Color.Brown
-        txtSellCost.Location = New Point(195, 230)
-        txtSellCost.Multiline = True
-        txtSellCost.Name = "txtSellCost"
-        txtSellCost.Size = New Size(255, 26)
-        txtSellCost.TabIndex = 12
+        numSellCost.BackColor = Color.BlanchedAlmond
+        numSellCost.BorderStyle = BorderStyle.None
+        numSellCost.DecimalPlaces = 2
+        numSellCost.Font = New Font("rainyhearts", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        numSellCost.ForeColor = Color.Brown
+        numSellCost.Location = New Point(195, 230)
+        numSellCost.Maximum = New Decimal(New Integer() {99999, 0, 0, 0})
+        numSellCost.Name = "numSellCost"
+        numSellCost.Size = New Size(255, 26)
+        numSellCost.TabIndex = 12
         ' 
         ' btnCreate
         ' 
         btnCreate.BackColor = Color.Transparent
         btnCreate.Cursor = Cursors.Hand
         btnCreate.Image = My.Resources.Resources.create
-        btnCreate.Location = New Point(55, 276)
+        btnCreate.Location = New Point(55, 325)
         btnCreate.Name = "btnCreate"
         btnCreate.Size = New Size(175, 48)
         btnCreate.SizeMode = PictureBoxSizeMode.StretchImage
         btnCreate.TabIndex = 13
         btnCreate.TabStop = False
         ' 
-        ' btnRead
-        ' 
-        btnRead.BackColor = Color.Transparent
-        btnRead.Cursor = Cursors.Hand
-        btnRead.Image = My.Resources.Resources.read
-        btnRead.Location = New Point(275, 276)
-        btnRead.Name = "btnRead"
-        btnRead.Size = New Size(175, 48)
-        btnRead.SizeMode = PictureBoxSizeMode.StretchImage
-        btnRead.TabIndex = 14
-        btnRead.TabStop = False
-        ' 
         ' btnUpdate
         ' 
         btnUpdate.BackColor = Color.Transparent
         btnUpdate.Cursor = Cursors.Hand
         btnUpdate.Image = My.Resources.Resources.update
-        btnUpdate.Location = New Point(55, 336)
+        btnUpdate.Location = New Point(275, 325)
         btnUpdate.Name = "btnUpdate"
         btnUpdate.Size = New Size(175, 48)
         btnUpdate.SizeMode = PictureBoxSizeMode.StretchImage
         btnUpdate.TabIndex = 15
         btnUpdate.TabStop = False
         ' 
+        ' btnRead
+        ' 
+        btnRead.BackColor = Color.Transparent
+        btnRead.Cursor = Cursors.Hand
+        btnRead.Image = My.Resources.Resources.read
+        btnRead.Location = New Point(90, 325)
+        btnRead.Name = "btnRead"
+        btnRead.Size = New Size(175, 48)
+        btnRead.SizeMode = PictureBoxSizeMode.StretchImage
+        btnRead.TabIndex = 14
+        btnRead.TabStop = False
+        ' 
         ' btnDelete
         ' 
         btnDelete.BackColor = Color.Transparent
         btnDelete.Cursor = Cursors.Hand
         btnDelete.Image = My.Resources.Resources.delete
-        btnDelete.Location = New Point(275, 336)
+        btnDelete.Location = New Point(340, 325)
         btnDelete.Name = "btnDelete"
         btnDelete.Size = New Size(175, 48)
         btnDelete.SizeMode = PictureBoxSizeMode.StretchImage
         btnDelete.TabIndex = 16
         btnDelete.TabStop = False
-        ' 
-        ' pb1 (Right Board: Farm)
-        ' 
-        pb1.Image = My.Resources.Resources.menu1
-        pb1.Location = New Point(552, 166)
-        pb1.Name = "pb1"
-        pb1.Size = New Size(607, 424)
-        pb1.SizeMode = PictureBoxSizeMode.StretchImage
-        pb1.TabIndex = 0
-        pb1.TabStop = False
-        ' 
-        ' lbl8 (Farm)
-        ' 
-        lbl8.AutoSize = True
-        lbl8.BackColor = Color.Transparent
-        lbl8.Font = New Font("rainyhearts", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lbl8.ForeColor = Color.Brown
-        lbl8.Location = New Point(35, 20)
-        lbl8.Name = "lbl8"
-        lbl8.Size = New Size(94, 35)
-        lbl8.TabIndex = 0
-        lbl8.Text = "Farm"
         ' 
         ' DataGridView1
         ' 
@@ -302,7 +310,7 @@ Partial Class week13
         DataGridView1.Location = New Point(35, 68)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.ReadOnly = True
-        DataGridView1.Size = New Size(537, 320)
+        DataGridView1.Size = New Size(537, 240)
         DataGridView1.TabIndex = 1
         ' 
         ' backbtn
@@ -320,7 +328,7 @@ Partial Class week13
         ' 
         ' week13
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = My.Resources.Resources.bg4
         BackgroundImageLayout = ImageLayout.Stretch
@@ -336,9 +344,12 @@ Partial Class week13
         Text = "wk13"
         CType(pb1, ComponentModel.ISupportInitialize).EndInit()
         CType(pb2, ComponentModel.ISupportInitialize).EndInit()
+        CType(numSeedCost, ComponentModel.ISupportInitialize).EndInit()
+        CType(numGrowth, ComponentModel.ISupportInitialize).EndInit()
+        CType(numSellCost, ComponentModel.ISupportInitialize).EndInit()
         CType(btnCreate, ComponentModel.ISupportInitialize).EndInit()
-        CType(btnRead, ComponentModel.ISupportInitialize).EndInit()
         CType(btnUpdate, ComponentModel.ISupportInitialize).EndInit()
+        CType(btnRead, ComponentModel.ISupportInitialize).EndInit()
         CType(btnDelete, ComponentModel.ISupportInitialize).EndInit()
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         CType(backbtn, ComponentModel.ISupportInitialize).EndInit()
@@ -361,11 +372,11 @@ Partial Class week13
     Friend WithEvents btnUpdate As PictureBox
     Friend WithEvents btnDelete As PictureBox
     Friend WithEvents txtCropId As TextBox
-    Friend WithEvents txtType As TextBox
     Friend WithEvents txtCropName As TextBox
-    Friend WithEvents txtSeedCost As TextBox
-    Friend WithEvents txtGrowth As TextBox
-    Friend WithEvents txtSellCost As TextBox
+    Friend WithEvents txtType As TextBox
+    Friend WithEvents numSeedCost As NumericUpDown
+    Friend WithEvents numGrowth As NumericUpDown
+    Friend WithEvents numSellCost As NumericUpDown
     Friend WithEvents DataGridView1 As DataGridView
 
     Friend Property PictureBox1 As PictureBox

@@ -31,6 +31,7 @@ Partial Class finals
         banner = New PictureBox()
         arrow1 = New PictureBox()
         arrow2 = New PictureBox()
+        wk13 = New PictureBox()
         arrow3 = New PictureBox()
         CType(bg, ComponentModel.ISupportInitialize).BeginInit()
         CType(woodboard, ComponentModel.ISupportInitialize).BeginInit()
@@ -40,6 +41,7 @@ Partial Class finals
         CType(banner, ComponentModel.ISupportInitialize).BeginInit()
         CType(arrow1, ComponentModel.ISupportInitialize).BeginInit()
         CType(arrow2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(wk13, ComponentModel.ISupportInitialize).BeginInit()
         CType(arrow3, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -137,6 +139,18 @@ Partial Class finals
         arrow2.TabIndex = 19
         arrow2.TabStop = False
         ' 
+        ' wk13
+        ' 
+        wk13.BackColor = Color.Transparent
+        wk13.Cursor = Cursors.Hand
+        wk13.Image = My.Resources.Resources.wk13
+        wk13.Location = New Point(422, 140)
+        wk13.Name = "wk13"
+        wk13.Size = New Size(318, 323)
+        wk13.SizeMode = PictureBoxSizeMode.StretchImage
+        wk13.TabIndex = 26
+        wk13.TabStop = False
+        ' 
         ' arrow3
         ' 
         arrow3.BackColor = Color.Transparent
@@ -154,6 +168,7 @@ Partial Class finals
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1184, 611)
+        Controls.Add(wk13)
         Controls.Add(arrow3)
         Controls.Add(arrow2)
         Controls.Add(arrow1)
@@ -179,6 +194,7 @@ Partial Class finals
         CType(banner, ComponentModel.ISupportInitialize).EndInit()
         CType(arrow1, ComponentModel.ISupportInitialize).EndInit()
         CType(arrow2, ComponentModel.ISupportInitialize).EndInit()
+        CType(wk13, ComponentModel.ISupportInitialize).EndInit()
         CType(arrow3, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
@@ -191,5 +207,6 @@ Partial Class finals
     Friend WithEvents banner As PictureBox
     Friend WithEvents arrow1 As PictureBox
     Friend WithEvents arrow2 As PictureBox
+    Friend WithEvents wk13 As PictureBox
     Friend WithEvents arrow3 As PictureBox
 End Class
